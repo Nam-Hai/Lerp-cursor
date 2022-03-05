@@ -16,7 +16,9 @@ R.Lerp = (start, end, t) => {
 
     class Circle {
         constructor() {
-            this.el = document.querySelector('.circle');
+            this.el = document.createElement("div");
+            this.el.classList.add('circle')
+            document.body.appendChild(this.el)
 
             this.x = mouseX;
             this.y = mouseY;
