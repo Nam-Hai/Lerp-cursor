@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: blueviolet;
+}
