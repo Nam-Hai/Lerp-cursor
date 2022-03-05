@@ -4,9 +4,91 @@
 
 }
 
+body {
+    background: white;
+}
+
 .circle {
-    height: 30px;
-    width: 30px;
+    position: absolute;
+    height: 15px;
+    width: 15px;
     border-radius: 50%;
     background-color: blueviolet;
+}
+
+.wrapper {
+    margin: 15rem auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    background-color: white;
+    font-family: "migra";
+    font-size: 5em;
+}
+
+span {
+    font-weight: 300;
+    background-color: black;
+    color: white;
+    font-family: "Roslindale Text";
+    display: inline-block;
+    height: 102px;
+}
+
+h1:nth-child(3) {
+    font-family: "Migra Italic";
+}
+
+.hero {
+    height: 15rem;
+    width: 25rem;
+    background-color: darkcyan;
+    margin: 1rem;
+    background-image: url("hero.jpg");
+    background-size: cover;
+}
+
+/* .cursor {
+    position: absolute;
+    top: calc(50% - 6px);
+    left: calc(50% - 6px);
+    height: 11px;
+    width: 11px;
+    background-color: tomato;
+    border-radius: 20%;
+} */
+#textWrapper {
+    opacity: 1;
+    width: 10rem;
+    aspect-ratio: 1 / 1;
+    transition: 500ms;
+    animation: rotateImageCursor linear 20s infinite;
+    background-color: white;
+    border-radius: 50%;
+}
+
+@keyframes rotateImageCursor {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.mix-blend {
+    mix-blend-mode: difference;
+    background-blend-mode: difference;
+}
+.cursor-container {
+    height: 0;
+    width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
 }
