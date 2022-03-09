@@ -1,13 +1,13 @@
-window.R = {};
-R.BM = (r, s) => {
+window.N = {};
+N.BM = (r, s) => {
     var e = s.length;
     for (let t = 0; t < e; t++) r[s[t]] = r[s[t]].bind(r)
 };
-R.Lerp = (start, end, t) => {
+N.Lerp = (start, end, t) => {
     return (1 - t) * start + t * end
 }
 
-R.Cr = (t) => document.createElement(t);
+N.Cr = (t) => document.createElement(t);
 
 // init
 ! function () {
